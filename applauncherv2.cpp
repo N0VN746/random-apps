@@ -73,8 +73,7 @@ int main() {
 
     // Targets where user applications live. Change to "C:\\" to scrape the entire drive.
     std::vector<std::string> searchPaths = {
-        "C:\\Program Files",
-        "C:\\Program Files (x86)",
+		"C:\\",
         // Dynamically get the Local AppData folder (where apps like Discord and Chrome install)
         std::string(std::getenv("USERPROFILE")) + "\\AppData\\Local"
     };
